@@ -1,0 +1,9 @@
+Pregunta:
+¿Qué diferencia notas entre el comportamiento de la variable global y la local?
+Respuesta:
+La variable global (contadorGlobal) se declara fuera de cualquier función, por lo que su valor persiste entre llamadas a funciones y se mantiene durante toda la ejecución del programa. En cambio, la variable local (contadorLocal) se declara dentro de una función o bloque, por lo que su valor no persiste entre llamadas y se reinicia cada vez que se ejecuta la función o bloque donde se declaró.
+
+Pregunta:
+¿Por qué la variable local no conserva su valor entre llamadas?
+Respuesta:
+La variable local no conserva su valor entre llamadas porque se crea y destruye cada vez que se ejecuta la función o bloque donde se declaró. En esta versión del código, contadorLocal se declara dentro de main(), pero no se inicializa ni se modifica dentro de main(), por lo que su valor es indefinido al imprimirlo.

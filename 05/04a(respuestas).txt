@@ -1,0 +1,19 @@
+Pregunta:
+¿Cómo distingue C++ entre la variable local y la global con el mismo nombre?
+
+Respuesta:
+En C++, cuando hay una variable local y una variable global con el mismo nombre, el lenguaje distingue entre ambas mediante el ámbito (scope) en el que se encuentran:
+La variable local tiene prioridad dentro del ámbito de la función donde se declara.
+La variable global está disponible en todo el programa, pero si hay una variable local con el mismo nombre, la variable local oculta a la global dentro de ese ámbito.
+
+Pregunta:
+¿Por qué en C++ es necesario usar el operador :: para acceder a la variable global dentro de la función?
+Respuesta:
+En C++, el operador :: (llamado operador de resolución de ámbito) se usa para acceder a elementos globales o estáticos cuando hay ambigüedad debido a nombres iguales en diferentes ámbitos.
+
+Cuando hay una variable local con el mismo nombre que una variable global, el ámbito local tiene prioridad dentro de la función. Esto significa que, si se escribe simplemente dato, el compilador entenderá que se refiere a la variable local.
+
+Si se desea acceder explícitamente a la variable global (aunque exista una local con el mismo nombre), se debe usar ::dato. Esto le dice al compilador que se quiere acceder a la variable global dato, y no a la local con el mismo nombre.
+
+
+

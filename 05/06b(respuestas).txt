@@ -1,0 +1,5 @@
+
+En la versión de C++ del código, la variable local resultado y la variable global resultado tienen el mismo nombre, lo que puede causar sombreado (shadowing) al adaptar el código al lenguaje C, es decir, la variable local oculta a la variable global dentro del ámbito de la función calcular().
+
+En C++ esto se evita utilizando el operador de ambito ::, sin embargo este operador no está disponible en C.
+Para evitar errores y obtener el mismo resultado de salida, se modifica el nombre de la variable local resultado, cambiandolo a resultadLocal.

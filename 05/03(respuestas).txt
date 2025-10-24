@@ -1,0 +1,9 @@
+Pregunta:
+¿Por qué no puedes acceder a i fuera del bucle?
+Respuesta:
+La variable i está declarada dentro del bucle for, lo que significa que su ámbito es solo dentro del bucle. Una vez que el bucle termina, la variable i deja de existir, por lo que no puedes acceder a ella fuera del bucle.
+
+Pregunta:
+¿Qué pasa con la variable j? ¿Por qué es accesible dentro y fuera del bucle?
+Respuesta:
+La variable j está declarada fuera del bucle, por lo que su ámbito es dentro de la función main(). Esto significa que j es accesible tanto dentro como fuera del bucle.

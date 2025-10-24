@@ -1,0 +1,20 @@
+Pregunta:
+¿Qué tipo de variable conviene utilizar para contar las llamadas?
+Respuesta:
+Se puede utilizar una variable estática de tipo int para contar las llamadas.
+
+Pregunta:
+¿Cómo y dónde conviene declarar las variables para que se mantenga la cuenta entre las llamadas, pero que no se compartan entre las funciones?
+Respuesta:
+Las variables deben ser declaradas como static dentro del ámbito global (fuera de las funciones) para que se mantengan entre llamadas, pero no se compartan con otras funciones.
+
+Pregunta:
+¿Qué variables tienen que ser locales? ¿Cuál tiene que ser estática?
+Respuesta:
+Las variables contadorA y contadorB deben ser estáticas para mantener su valor entre llamadas a las funciones. 
+No se necesitan variables locales, ya que no se requiere que se reinicien en cada llamada.
+
+Pregunta:
+¿Cómo se mantiene la separación de los contadores entre las dos funciones?
+Respuesta:
+Cada función tiene su propia variable estática (contadorA para funcionA y contadorB para funcionB), lo que garantiza que los contadores no se compartan entre las funciones.

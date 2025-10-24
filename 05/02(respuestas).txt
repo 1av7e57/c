@@ -1,0 +1,9 @@
+Pregunta:
+¿Por qué la variable estática conserva su valor entre llamadas a la función?
+Respuesta:
+El contadorEstatico conserva su valor entre llamadas a la función porque es una variable estática. Estas variables se inicializan solo una vez y retienen su valor incluso después de que la función termine su ejecución. Esto ocurre porque su alcance es la función, pero su vida útil es el programa completo.
+
+Pregunta:
+¿Qué diferencia hay entre la vida útil de una variable local y una variable estática?*/
+Respuesta:
+La vida útil de una variable local es solo durante la ejecución de la función en la que se declara. Una vez que la función termina, la variable se destruye. Por otro lado, la vida útil de una variable estática abarca todo el programa. Se inicializa solo una vez y mantiene su valor entre llamadas a la función.

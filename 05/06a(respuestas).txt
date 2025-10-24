@@ -1,0 +1,17 @@
+Pregunta:
+¿Qué diferencia notas entre la variable resultado local y la global después de cada llamada?
+Respuesta:
+Variable local resultado: Se redefine en cada llamada a calcular() y se inicializa en 10. Luego se le suma 5, por lo que su valor será 15 en cada llamada. No persiste entre llamadas.
+Variable global resultado: Se inicializa en 100 y se le suma 5 en cada llamada. Por lo tanto, su valor se actualiza con cada llamada:
+Primera llamada: 100 + 5 = 105
+Segunda llamada: 105 + 5 = 110
+Tercera llamada: 110 + 5 = 115
+
+Pregunta:
+¿Cómo se comporta la variable estática contador?
+Respuesta:
+La variable contador es estática, lo que significa que mantiene su valor entre llamadas a la función. Se inicializa en 0 la primera vez y se incrementa en 1 en cada llamada.
+Primera llamada: contador = 1
+Segunda llamada: contador = 2
+Tercera llamada: contador = 3
+

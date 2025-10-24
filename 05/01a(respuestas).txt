@@ -1,0 +1,13 @@
+No se puede acceder a la variable contadorLocal desde la función main(). Esto se debe a que contadorLocal es una variable local declarada dentro de la función incrementar(). Su alcance (scope) está limitado solo a esa función, por lo que no es visible ni accesible desde otras funciones, como main()
+
+Diferencias entre variable global y local:
+
+Característica		Variable Global (contadorGlobal)		Variable Local (contadorLocal)
+
+Alcance			Accesible en todo el programa			Solo accesible dentro de la función donde se declaró, incrementar()
+Duración		Existe durante toda la ejecución del programa	Existe solo durante la ejecución de la función incrementar()
+Modificación		Puede ser modificada desde cualquier lugar	Solo puede ser modificada dentro de la función incrementar()
+
+¿Por qué la variable local no conserva su valor entre llamadas?
+La variable local contadorLocal se crea cada vez que se llama a la función incrementar(). Esto significa que al finalizar la ejecución de la función, la variable se destruye. Por lo tanto, cada llamada a incrementar() inicia con un valor inicial (por defecto, 0), y no conserva el valor de llamadas anteriores.
+

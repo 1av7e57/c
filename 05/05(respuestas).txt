@@ -1,0 +1,20 @@
+Pregunta:
+¿Qué es una función recursiva?
+Respuesta:
+Una función recursiva es una función que se llama a sí misma dentro de su propio cuerpo para resolver un problema. Este enfoque es útil para resolver problemas que pueden dividirse en subproblemas más pequeños de la misma naturaleza.
+
+Pregunta:
+¿Cómo afecta la variable estática al comportamiento de la función recursiva?
+Respuesta:
+La variable estática llamadas mantiene su valor entre llamadas a la función, incluso durante las llamadas recursivas. Esto significa que:
+El contador no se reinicia en cada llamada a contarLlamadas(), ya sea directa o recursiva.
+Permite rastrear el número total de llamadas a la función, incluso si la función se llama a sí misma.
+
+Pregunta:
+¿Por qué el valor de la variable estática no se reinicia en cada llamada recursiva?
+Respuesta:
+La variable estática se inicializa solo una vez, al inicio de la ejecución del programa. Esto ocurre porque:
+La variable estática tiene una vida de duración global dentro del ámbito de la función.
+No se reinicia en cada llamada, incluso si la función se llama a sí misma (recursión).
+Por lo tanto, el contador se incrementa globalmente para todas las llamadas, ya sean directas o recursivas.
+

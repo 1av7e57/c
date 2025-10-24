@@ -1,0 +1,10 @@
+Tanto C++ como C distinguen entre la variable local y la global con el mismo nombre por el ámbito (scope) en el que se encuentran. La variable local tiene prioridad dentro de la función donde se declara, mientras que la variable global está disponible en todo el programa.
+
+En C++, el operador :: (llamado operador de resolución de ámbito) se usa para acceder a elementos globales o estáticos cuando hay ambigüedad debido a nombres iguales en diferentes ámbitos.
+Sin embargo, el operador :: no es válido en C.
+
+Para acceder a una variable global dentro de una función no se necesita ningún operador especial, ya que el compilador ya sabe que si no se especifica un ámbito, buscará la variable global (siempre que no haya una variable local con el mismo nombre).
+
+Pero, en C, si hay una variable local con el mismo nombre que una global, la variable local oculta a la global dentro del ámbito de la función. En ese caso, si se quiere ver el valor de la variable global dentro de la función, se debe cambiar el nombre de la variable local.
+
+

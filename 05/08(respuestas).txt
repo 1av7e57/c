@@ -1,0 +1,16 @@
+Pregunta:
+¿Por qué se debe usar una variable global en este caso?
+Respuesta:
+Se utiliza una variable global para garantizar que el contador de intentos (intentos) sea accesible en toda la aplicación, especialmente desde la función adivinarNumero, sin necesidad de pasarla como parámetro.
+
+Pregunta:
+¿Cómo se asegura que el contador global se incremente con cada intento?
+Respuesta:
+El contador global se incrementa dentro del bucle while cada vez que el usuario hace un intento incorrecto. Al final, se incrementa una vez más para contar el intento correcto. Esto se logra agregando la instrucción intentos++; en los lugares adecuados del código.
+
+
+
+
+
+
+
