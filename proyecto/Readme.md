@@ -1,5 +1,4 @@
 
-```markdown
 # 🎮 **Laberinto en C:**
 
 Un juego de laberinto interactivo para terminal Linux, desarrollado en lenguaje C. Navega por un laberinto, encuentra la salida y compite contra ti mismo para resolverlo en el menor número de movimientos.
@@ -26,6 +25,7 @@ Este programa es un juego de laberinto que puedes jugar directamente en la termi
 ## 🛠️ **Cómo compilar y ejecutar**
 
 1. Descarga los archivos del proyecto en una carpeta de tu equipo.
+
 ⚠️ **Importante**: asegúrate que estén descomprimidos antes de usarlos.
 2. Asegúrate de tener un compilador de C (como `gcc`) instalado.
 3. Abre una terminal desde la carpeta donde están los archivos.
@@ -80,7 +80,3 @@ Este proyecto está bajo la licencia MIT. Puedes usarlo, modificarlo y distribui
 ---
 
 ¡Diviértete resolviendo el laberinto en el menor número de pasos! 🧩
-```
-
----
-
