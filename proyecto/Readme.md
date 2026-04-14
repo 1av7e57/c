@@ -27,6 +27,7 @@ Este programa es un juego de laberinto que puedes jugar directamente en la termi
 1. Descarga los archivos del proyecto en una carpeta de tu equipo.
 
 ⚠️ **Importante**: asegúrate que estén descomprimidos antes de usarlos.
+
 2. Asegúrate de tener un compilador de C (como `gcc`) instalado.
 3. Abre una terminal desde la carpeta donde están los archivos.
 4. Compila el programa escribiendo en la terminal:
